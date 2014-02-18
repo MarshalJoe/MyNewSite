@@ -4,10 +4,10 @@
 <!-- about section -->
 
 {% setcontent about = 'page/about' %}
-<div class="about card">
-<img src="{{ about.image|image }}" style="width:100%;height:100%">
-{{ about.teaser }}
-{{ about.body }}
+<div class="about card" style="background: url({{ about.image|image }}); background-size:cover">
+
+<p>{{ about.teaser }}</p>
+<p>{{ about.body }}</p>
 
 </div>
 {% endblock %}
@@ -18,10 +18,10 @@
 <!-- tech section -->
 
 {% setcontent tech = 'page/tech' %}
-<div class="tech card">
-<img src="{{ tech.image|image }}" style="width:100%;height:100%">
-{{ tech.teaser }}
-{{ tech.body }}
+<div class="tech card" style="background: url({{ tech.image|image }}); background-size: cover">
+
+<p>{{ tech.teaser }}</p>
+<p>{{ tech.body }}</p>
 
 </div>
 {% endblock %}
