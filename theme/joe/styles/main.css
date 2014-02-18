@@ -24,6 +24,15 @@ body {
 	font-family: "Oxygen";
 	font-size: 1.5em;
 	padding: 25px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.text {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
 
 .card p {

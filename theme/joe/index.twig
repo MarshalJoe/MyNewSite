@@ -6,8 +6,10 @@
 {% setcontent about = 'page/about' %}
 <div class="about card" style="background: url({{ about.image|image }}); background-size:cover">
 
-<p>{{ about.teaser }}</p>
-<p>{{ about.body }}</p>
+	<div class="text">
+		<p>{{ about.teaser }}</p>
+		<p>{{ about.body }}</p>
+	</div>
 
 </div>
 {% endblock %}
@@ -20,12 +22,30 @@
 {% setcontent tech = 'page/tech' %}
 <div class="tech card" style="background: url({{ tech.image|image }}); background-size: cover">
 
-<p>{{ tech.teaser }}</p>
-<p>{{ tech.body }}</p>
+	<div class="text">
+		<p class="title">{{ tech.teaser }}</p>
+		<p>{{ tech.body }}</p>
+	</div>
 
 </div>
 {% endblock %}
 
+
+
+
+{% block writing %}
+<!-- writing section -->
+
+{% setcontent write = 'page/writing' %}
+<div class="writing card" style="background: url({{ write.image|image }}); background-size: cover">
+
+	<div class="text">
+		<p class="title">{{ write.teaser }}</p>
+		<p>{{ write.body }}</p>
+	</div>
+
+</div>
+{% endblock %}
 
 
 
