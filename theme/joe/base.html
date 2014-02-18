@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+	<title></title>	
+
+	<link rel="stylesheet" type="text/css" href="{{ paths.theme }}styles/main.css"/>
+
+	{% block head %}
+	{% endblock %}
+
+	</head>
+
+	<body>
+		
+		<div class="topper">no content</div>
+		<div class="header">Joe Marshall</div>
+
+
+		<div class="container">
+			
+			{% block about %}
+			{% endblock %}
+
+			<div class="divider"></div>
+			
+			{% block tech %}
+			{% endblock %}
+		
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,37 @@
+/* margin strip */
+
+body {
+	margin: 0px;
+	height: 100%;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	background-color: gray;
+	color:white;
+	font-size: 2em;
+	font-family: "Oxygen";
+	position:fixed;
+	padding: 10px;
+}
+
+
+.card {
+	border-top: 5px solid white;
+	height: 500px;
+	color: white;
+	background-color: black;
+	font-family: "Oxygen";
+	font-size: 2em;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+.topper {
+	height: 0px;
+	width: 100%;
+}
+
