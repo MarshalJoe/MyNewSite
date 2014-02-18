@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
+
 {% block about %}
 <!-- about section -->
 
 {% setcontent about = 'page/about' %}
-<div class="about card" style="background: url({{ about.image|image }}); background-size:cover">
+<div id="about" class="about card" style="background: url({{ about.image|image }}); background-size:cover">
 
-	<div class="text">
-		<p>{{ about.teaser }}</p>
+	<div class="text" data-stellar-ratio="2">
+		<div class="title">{{ about.teaser }}</div>
 		<p>{{ about.body }}</p>
 	</div>
 
@@ -20,14 +21,14 @@
 <!-- tech section -->
 
 {% setcontent tech = 'page/tech' %}
-<div class="tech card" style="background: url({{ tech.image|image }}); background-size: cover">
+<section id="tech" class="tech card" style="background: url({{ tech.image|image }}); background-size:cover">
 
-	<div class="text">
-		<p class="title">{{ tech.teaser }}</p>
+	<div class="text" data-stellar-ratio="2">
+		<div class="title">{{ tech.teaser }}</div>
 		<p>{{ tech.body }}</p>
 	</div>
 
-</div>
+</section>
 {% endblock %}
 
 
@@ -37,14 +38,14 @@
 <!-- writing section -->
 
 {% setcontent write = 'page/writing' %}
-<div class="writing card" style="background: url({{ write.image|image }}); background-size: cover">
+<section id="writing" class="writing card" style="background: url({{ write.image|image }}); background-size: cover">
 
-	<div class="text">
-		<p class="title">{{ write.teaser }}</p>
+	<div class="text" data-stellar-ratio="2">
+		<div class="title">{{ write.teaser }}</div>
 		<p>{{ write.body }}</p>
 	</div>
 
-</div>
+</section>
 {% endblock %}
 
 
