@@ -5,14 +5,15 @@
 <!-- about section -->
 
 {% setcontent about = 'page/about' %}
-<div id="about" class="about card" style="background: url({{ about.image|image }}); background-size:cover">
+<section class="about card" style="background: url({{ about.image|image }}); background-size:cover" data-stellar-background-ratio="0.5">
 
-	<div class="text" data-stellar-ratio="2">
+	<div class="text">
 		<div class="title">{{ about.teaser }}</div>
 		<p>{{ about.body }}</p>
+		<p><i class="fa fa-github fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-linkedin fa-2x"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter fa-2x"></i></p>
 	</div>
 
-</div>
+</section>
 {% endblock %}
 
 
@@ -21,9 +22,9 @@
 <!-- tech section -->
 
 {% setcontent tech = 'page/tech' %}
-<section id="tech" class="tech card" style="background: url({{ tech.image|image }}); background-size:cover">
+<section class="tech card" style="background: url({{ tech.image|image }}); background-size:cover" data-stellar-background-ratio="0.5">
 
-	<div class="text" data-stellar-ratio="2">
+	<div class="text">
 		<div class="title">{{ tech.teaser }}</div>
 		<p>{{ tech.body }}</p>
 	</div>
@@ -38,9 +39,9 @@
 <!-- writing section -->
 
 {% setcontent write = 'page/writing' %}
-<section id="writing" class="writing card" style="background: url({{ write.image|image }}); background-size: cover">
+<section class="writing card" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
 
-	<div class="text" data-stellar-ratio="2">
+	<div class="text">
 		<div class="title">{{ write.teaser }}</div>
 		<p>{{ write.body }}</p>
 	</div>
