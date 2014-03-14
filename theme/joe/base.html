@@ -2,7 +2,7 @@
 <html>
 	<head>
 	
-	<title></title>	
+	<title>Joe Marshall</title>	
 
 	<link rel="stylesheet" type="text/css" href="{{ paths.theme }}styles/main.css"/>
 	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
@@ -19,7 +19,10 @@
 	<body>
 		
 		<div class="topper">no content</div>
-		<div class="header">Joe Marshall</div>
+		<div class="header">
+			<h1 class="name">Joe Marshall</h1>
+			<h1 class="header-title">Hey</h1>
+		</div>
 
 
 		<div class="container">
@@ -40,55 +43,68 @@
 		</div>
 
 		<script type="text/javascript">
+		$( document ).ready(function() {
+			// hide title first time
+			//$(".header-title").hide();
+		
+				// fades in an element
+				var writeText = function (ms, element) {
+					$(element).hide();
+					$(element).delay(ms).fadeIn();
+				};		
 
-		// set a scroll waypoint
-			$('.writing').waypoint(function(direction) {
-	  		alert('Top of thing hit top of viewport.');
+
+				// set a scroll waypoint for writing
+				$('.writing').waypoint(function(direction) {
+		  		writeText(750, ".header-title");
+				});
+
+
+				
+				//resizes top card to fit window
+				$( window ).resize(function() {
+	  			var windowHeight = $(window).height();
+	  			var headerHeight = $(".header").height();
+	  			var height = windowHeight - headerHeight
+	  			$(".card" ).css({height:height});
+				});
+
+
+				// stellar.js parallax scrolling plugin configuration
+				$("body").stellar({
+				  // Set scrolling to be in either one or both directions
+				  verticalScrolling: true,
+				  horizontalScrolling: true,
+
+				  // Set the global alignment offsets
+				  verticalOffset: 50,
+
+				  // Refreshes parallax content on window load and resize
+				  responsive: false,
+
+				  // Select which property is used to calculate scroll.
+				  // Choose 'scroll', 'position', 'margin' or 'transform',
+				  // or write your own 'scrollProperty' plugin.
+				  scrollProperty: 'scroll',
+
+				  // Select which property is used to position elements.
+				  // Choose between 'position' or 'transform',
+				  // or write your own 'positionProperty' plugin.
+				  positionProperty: 'position',
+
+				  // Enable or disable the two types of parallax
+				  parallaxBackgrounds: true,
+				  parallaxElements: true,
+
+				  // Hide parallax elements that move outside the viewport
+				  hideDistantElements: true,
+
+				  // Customise how elements are shown and hidden
+				  hideElement: function($elem) { $elem.hide(); },
+				  showElement: function($elem) { $elem.show(); }
+				});
+
 			});
-
-
-			
-			// resizes top card to fit window
-			// $( window ).resize(function() {
-  	// 		var height = $(window).height();
-  	// 		$("#about" ).css({height:height});
-			// });
-
-
-			// stellar.js parallax scrolling plugin configuration
-			$("body").stellar({
-			  // Set scrolling to be in either one or both directions
-			  verticalScrolling: true,
-			  horizontalScrolling: true,
-
-			  // Set the global alignment offsets
-			  verticalOffset: 50,
-
-			  // Refreshes parallax content on window load and resize
-			  responsive: false,
-
-			  // Select which property is used to calculate scroll.
-			  // Choose 'scroll', 'position', 'margin' or 'transform',
-			  // or write your own 'scrollProperty' plugin.
-			  scrollProperty: 'scroll',
-
-			  // Select which property is used to position elements.
-			  // Choose between 'position' or 'transform',
-			  // or write your own 'positionProperty' plugin.
-			  positionProperty: 'position',
-
-			  // Enable or disable the two types of parallax
-			  parallaxBackgrounds: true,
-			  parallaxElements: true,
-
-			  // Hide parallax elements that move outside the viewport
-			  hideDistantElements: true,
-
-			  // Customise how elements are shown and hidden
-			  hideElement: function($elem) { $elem.hide(); },
-			  showElement: function($elem) { $elem.show(); }
-			});
-
 		</script>
 
 	</body>
