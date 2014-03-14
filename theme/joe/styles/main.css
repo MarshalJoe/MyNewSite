@@ -46,9 +46,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header-title {
+	font-family: "Nothing You Could Do";
 	display:inline-block;
 	text-align: center;
 	margin:0px;
+	font-size: 2.75em;
+	margin-left: 22%;
 }
 
 .logo-links {
