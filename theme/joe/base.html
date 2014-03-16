@@ -21,8 +21,7 @@
 		
 		<div class="topper">no content</div>
 		<div class="header">
-			<h1 class="name">Joe Marshall</h1>
-			<h1 class="header-title">Hey</h1>
+			<h1 class="header-title"></h1>
 		</div>
 
 
@@ -43,31 +42,41 @@
 		
 		</div>
 
+		<div class="footer">
+			<h1>Helllooooooo</h1>
+		</div>
+
 		<script type="text/javascript">
 		$( document ).ready(function() {
-			// hide title first time
-			//$(".header-title").hide();
-		
-				// fades in an element
-				var writeText = function (ms, element) {
+			
+			// fades in an element
+			var writeText = function (ms, element) {
 					$(element).hide();
 					$(element).delay(ms).fadeIn();
-				};		
+			};
+	
+			writeText(500, ".header-title");
+		
 
 
-				// set a scroll waypoint for writing
-				$('.writing').waypoint(function(direction) {
-		  		writeText(750, ".header-title");
-				});
+			//calculates scroll distance on event, fills in right title
+				$(window).scroll(function (event) {
+					var y = $(this).scrollTop();
+					var cardHeight = $(".card").height();
+					var headerHeight = $(".header").height();
+					var height = (cardHeight + headerHeight);	
 
+					if (y > (height - 20)) {
+						$(".header-span").css("font-family", "Oxygen")
+						$(".header-title").html("what I code");
+					} else {
+						$(".header-title").html("A little about me");
+					}
 
-				
-				//resizes top card to fit window
-				$( window ).resize(function() {
-	  			var windowHeight = $(window).height();
-	  			var headerHeight = $(".header").height();
-	  			var height = windowHeight - headerHeight
-	  			$(".card" ).css({height:height});
+					if (y > (height + cardHeight + 20)) {
+						$(".header-title").html("and what I write.")
+					}
+
 				});
 
 

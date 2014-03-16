@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6, p {
 	height: 500px;
 	color: white;
 	background-color: black;
-	font-family: "Oxygen";
 	font-size: 1.5em;
 	padding: 25px;
 	vertical-align: middle;
@@ -30,19 +29,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header {
 	width: 100%;
-	background-color: black;
+	height: 60px;
+	background-color: blue;
 	color:white;
 	position:fixed;
 	padding: 10px;
 	z-index: 100;
-}
-
-.name {
-	margin: 0px;
-	width: 275px;
-	padding-left: 25px;
-	font-size: 2.75em;
-	display: inline-block;
+	text-align: center;
 }
 
 .header-title {
@@ -50,8 +43,7 @@ h1, h2, h3, h4, h5, h6, p {
 	display:inline-block;
 	text-align: center;
 	margin:0px;
-	font-size: 2.75em;
-	margin-left: 22%;
+	font-size: 2.5em;
 }
 
 .logo-links {
@@ -69,6 +61,7 @@ h1, h2, h3, h4, h5, h6, p {
 	text-shadow: 2px 2px black;
 }
 
+
 a {
 	color:white;
 	text-decoration: none;
@@ -81,5 +74,11 @@ a {
 .topper {
 	height: 0px;
 	width: 100%;
+}
+
+.footer {
+	width: 100%;
+	background-color:black;
+	height: 250px;
 }
 
