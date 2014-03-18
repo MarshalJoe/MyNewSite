@@ -50,10 +50,9 @@ body {
 
 .text {
 	margin-top: 50px;
-	width: 500px;
-	text-align: justify;
+	width: 350px;
 	position: relative;
-	margin-right: auto;
+	margin-right: 15%;
 	margin-left: auto;
 	font-family: "Lusitana";
 	font-size: .75em;
