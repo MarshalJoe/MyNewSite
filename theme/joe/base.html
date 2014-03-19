@@ -21,6 +21,7 @@
 		
 		<div class="topper">no content</div>
 		<div class="header">
+			<div class="icon"></div>
 			<h1 class="header-title"></h1>
 		</div>
 
@@ -67,13 +68,15 @@
 					var height = (cardHeight + headerHeight);	
 
 					if (y > (height - 30)) {
-						$(".header-span").css("font-family", "Oxygen")
 						$(".header-title").html("what I code");
+						$(".icon").html("<i class='fa fa-github fa-3x'></i>")
 					} else {
+						$(".icon").html("<i class='fa fa-facebook fa-3x'></i>")
 						$(".header-title").html("A little about me");
 					}
 
 					if (y > (height + cardHeight + 20)) {
+						$(".icon").html("<i class='fa fa-twitter fa-3x'></i>")
 						$(".header-title").html("and what I write.")
 					}
 
