@@ -14,7 +14,6 @@ body {
 	background-color: black;
 	font-size: 1.5em;
 	padding: 25px;
-	vertical-align: middle;
 	position: relative;
 	background-attachment: fixed;
 }
@@ -49,17 +48,22 @@ body {
 	margin-right: 50px;
 }
 
+.profile-pic {
+	border-radius: 50px;
+	height: 100px;
+	width: 100px;
+}
+
 .text {
-	margin-top: 50px;
 	max-width: 700px;
-	min-width: 350px;
+	min-width: 320px;
 	text-align: justify;
 	position: relative;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: "Lusitana";
-	font-size: .8em;
-	text-shadow: 2px 2px 4px #666;
+	font-size: .75em;
+	/*text-shadow: 2px 2px 4px #666;*/
 }
 
 
@@ -74,10 +78,11 @@ a {
 }
 
 .runner {
-	width: 60%;
-	padding: 20px;
+	padding: 30px;
+	max-width: 700px;
+	min-width: 320px;
 	margin: auto;
-	background-color:rgba(71,71,71,0.5);
+	background-color:rgba(2, 1, 22, 0.85);
 }
 
 .footer {
