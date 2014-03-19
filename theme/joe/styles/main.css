@@ -59,6 +59,7 @@ body {
 	margin-left: auto;
 	font-family: "Lusitana";
 	font-size: .8em;
+	text-shadow: 2px 2px 4px #666;
 }
 
 
@@ -70,6 +71,13 @@ a {
 .topper {
 	height: 0px;
 	width: 100%;
+}
+
+.runner {
+	width: 60%;
+	padding: 20px;
+	margin: auto;
+	background-color:rgba(71,71,71,0.5);
 }
 
 .footer {
