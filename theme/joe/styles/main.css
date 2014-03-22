@@ -6,7 +6,6 @@ body {
 	height: 100%;
 }
 
-
 .card {
 	border-top: 5px solid white;
 	height: 500px;
@@ -59,13 +58,35 @@ body {
 	min-width: 320px;
 	text-align: justify;
 	position: relative;
+	margin-top: 100px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: "Lusitana";
 	font-size: .85em;
-	/*text-shadow: 2px 2px 4px #666;*/
+	color: black;
+	text-shadow: 2px 2px 4px #666;
 }
 
+.greeting, .main {
+	display: inline-block;
+}
+
+.greeting {
+	font-family: "Nothing You Could Do";
+	font-size: 4em;
+	width: 450px;
+	height: 300px;
+}
+
+.greeting p {
+	margin: 0px;
+}
+
+.main {
+	font-size: 1em;
+	width: 300px;
+	margin-left: 40px;
+}
 
 a {
 	color:white;
@@ -77,14 +98,14 @@ a {
 	width: 100%;
 }
 
-.runner {
+/*.runner {
 	padding: 30px;
 	max-width: 700px;
 	min-width: 320px;
 	margin: auto;
 	background-color:rgba(50, 43, 242, 0.75);
 	border-radius: 15px;
-}
+}*/
 
 .footer {
 	width: 100%;

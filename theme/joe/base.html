@@ -61,18 +61,20 @@
 
 
 			//calculates scroll distance on event, fills in right icon, title
-				$(window).scroll(function (event) {
+				$(window).scroll(function (e) {
 					var y = $(this).scrollTop();
 					var cardHeight = $(".card").height();
 					var headerHeight = $(".header").height();
 					var height = (cardHeight + headerHeight);	
 
+					// header stuff (hardcoded px values account for borders)
 					if (y > (height - 30)) {
+						$(".icon").html("<a href='http://www.github.com/marshaljoe'><i class='fa fa-github fa-3x'></i></a>");
 						$(".header-title").html("what I code");
-						$(".icon").html("<a href='http://www.github.com/marshaljoe'><i class='fa fa-github fa-3x'></i></a>")
+
 					} else {
 						$(".icon").html("<a href='https://www.linkedin.com/pub/joe-marshall/50/553/708'><i class='fa fa-linkedin fa-3x'></i></a>")
-						$(".header-title").html("A little about me");
+						$(".header-title").html("About me");
 					}
 
 					if (y > (height + cardHeight + 20)) {
@@ -80,7 +82,14 @@
 						$(".header-title").html("and what I write.")
 					}
 
+
+
 				});
+
+                
+
+
+
 
 
 				// stellar.js parallax scrolling plugin configuration
