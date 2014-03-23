@@ -10,7 +10,7 @@ body {
 	border-top: 5px solid white;
 	height: 500px;
 	color: white;
-	font-size: 1.25em;
+	font-size: 1.5em;
 	background-color: black;
 	padding: 25px;
 	position: relative;
@@ -47,31 +47,23 @@ body {
 	margin-right: 50px;
 }
 
-.profile {
-	border-radius: 50%;
-	height: 175px;
-	width: 175px;
-	display:block;
-	margin-top: 50px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: black;
-}
 
 .text {
 	max-width: 700px;
 	min-width: 320px;
-	text-align: justify;
 	position: relative;
 	margin-top: 0px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: "Lusitana";
-	color: #def7fc;
+	color: white;
 	text-shadow: 2px 2px 4px #666;
 	background-attachment: fixed;
 }
 
+.about {
+	padding-top: 100px;
+}
 
 .main {
 	margin-top: 20px;
@@ -105,10 +97,21 @@ a:hover {
 
 .logos {
 	position: relative;
-	transition:top 1s;
+	transition:top .75s;
 }
 
 .logos:hover {
-	top: -5px;
+	top: -10px;
 }
 
+.fa-github:hover {
+	color:black;
+}
+
+.fa-twitter:hover {
+	color:#55acee;
+}
+
+.fa-linkedin-square:hover {
+	color:#1a85bc;
+}
