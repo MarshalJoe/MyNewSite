@@ -38,7 +38,7 @@ body {
 	display:inline-block;
 	text-align: center;
 	margin:0px;
-	font-size: 2.5em;
+	font-size: 3em;
 }
 
 .logo-links {
@@ -47,10 +47,15 @@ body {
 	margin-right: 50px;
 }
 
-.profile-pic {
-	border-radius: 50px;
-	height: 100px;
-	width: 100px;
+.profile {
+	border-radius: 50%;
+	height: 175px;
+	width: 175px;
+	display:block;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
 }
 
 .text {
@@ -62,29 +67,15 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	font-family: "Lusitana";
-	color: white;
+	color: #def7fc;
 	text-shadow: 2px 2px 4px #666;
 	background-attachment: fixed;
 }
 
-.greeting, .main {
-}
-
-.greeting {
-	font-family: "Sacramento";
-	color:#8fe7f7;
-	font-size: 5em;
-	width: 600px;
-	height: 100px;
-}
-
-.greeting p {
-	margin-top: 50px;
-}
 
 .main {
-	margin-top: 50px;
-	margin-left: 5px;
+	margin-top: 20px;
+	margin-left: 20px;
 }
 
 a {
@@ -92,19 +83,14 @@ a {
 	text-decoration: none;
 }
 
+a:hover {
+	color:#def7fc;
+}
+
 .topper {
 	height: 0px;
 	width: 100%;
 }
-
-/*.runner {
-	padding: 30px;
-	max-width: 700px;
-	min-width: 320px;
-	margin: auto;
-	background-color:rgba(50, 43, 242, 0.75);
-	border-radius: 15px;
-}*/
 
 .footer {
 	width: 100%;
@@ -112,10 +98,17 @@ a {
 	height: 250px;
 }
 
-.icon {
-	display: inline-block;
-	float: left;
-	margin-top: 5px;
-	margin-left: 5px;
+.logo-container {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.logos {
+	position: relative;
+	transition:top 1s;
+}
+
+.logos:hover {
+	top: -5px;
 }
 
