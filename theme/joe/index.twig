@@ -5,7 +5,7 @@
 <!-- about section -->
 
 {% setcontent about = 'page/about' %}
-<section class="about card" style="background: url({{ about.image|image }}); background-size:cover" data-stellar-background-ratio="0.35">
+<section class="about card" style="background: url({{ about.image|image }}); background-size:cover" data-stellar-background-ratio="0.25">
 
 	<div class="text">
 		<div class="greeting">{{ about.teaser }}</div>
@@ -21,7 +21,7 @@
 <!-- tech section -->
 
 {% setcontent tech = 'page/tech' %}
-<section class="tech card" style="background: url({{ tech.image|image }}); background-size:cover" data-stellar-background-ratio="0.35">
+<section class="tech card" style="background: url({{ tech.image|image }}); background-size:cover" data-stellar-background-ratio="0.25">
 
 	<div class="text">
 		<p>{{ tech.body }}</p>
@@ -37,11 +37,11 @@
 <!-- writing section -->
 
 {% setcontent write = 'page/writing' %}
-<section class="writing card" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.35">
+<section class="writing card" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
 
 	<div class="text">
 		<p>{{ write.body }}</p>
-	</data-stellar-background-ratiov>
+	</div>
 
 </section>
 {% endblock %}

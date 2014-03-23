@@ -10,8 +10,8 @@ body {
 	border-top: 5px solid white;
 	height: 500px;
 	color: white;
+	font-size: 1.25em;
 	background-color: black;
-	font-size: 1.5em;
 	padding: 25px;
 	position: relative;
 	background-attachment: fixed;
@@ -58,34 +58,33 @@ body {
 	min-width: 320px;
 	text-align: justify;
 	position: relative;
-	margin-top: 100px;
+	margin-top: 0px;
 	margin-right: auto;
 	margin-left: auto;
 	font-family: "Lusitana";
-	font-size: .85em;
-	color: black;
+	color: white;
 	text-shadow: 2px 2px 4px #666;
+	background-attachment: fixed;
 }
 
 .greeting, .main {
-	display: inline-block;
 }
 
 .greeting {
-	font-family: "Nothing You Could Do";
-	font-size: 4em;
-	width: 450px;
-	height: 300px;
+	font-family: "Sacramento";
+	color:#8fe7f7;
+	font-size: 5em;
+	width: 600px;
+	height: 100px;
 }
 
 .greeting p {
-	margin: 0px;
+	margin-top: 50px;
 }
 
 .main {
-	font-size: 1em;
-	width: 300px;
-	margin-left: 40px;
+	margin-top: 50px;
+	margin-left: 5px;
 }
 
 a {
