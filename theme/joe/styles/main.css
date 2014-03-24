@@ -10,15 +10,25 @@ body {
 	border-top: 5px solid white;
 	height: 500px;
 	color: white;
-	font-size: 1.5em;
+	font-size: 1.4em;
 	background-color: black;
 	padding: 25px;
 	position: relative;
 	background-attachment: fixed;
 }
 
-.container {
-	margin-top: 50px;
+.greeting {
+	font-size: 5em;
+	font-family: "Allura";
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	color:#8fe7f7;
+}
+
+.greeting p {
+	margin: 0px;
 }
 
 .header {
@@ -38,7 +48,7 @@ body {
 	display:inline-block;
 	text-align: center;
 	margin:0px;
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 .logo-links {
@@ -55,19 +65,14 @@ body {
 	margin-top: 0px;
 	margin-right: auto;
 	margin-left: auto;
-	font-family: "Lusitana";
+	font-family: "Source Sans Pro";
 	color: white;
-	text-shadow: 2px 2px 4px #666;
+	text-shadow: 2px 2px 4px black;
 	background-attachment: fixed;
 }
 
 .about {
 	padding-top: 100px;
-}
-
-.main {
-	margin-top: 20px;
-	margin-left: 20px;
 }
 
 a {
@@ -104,14 +109,20 @@ a:hover {
 	top: -10px;
 }
 
-.fa-github:hover {
-	color:black;
+.fa-github:hover, .fa-twitter:hover, .fa-linkedin-square:hover {
+	color:#8fe7f7;
 }
 
-.fa-twitter:hover {
-	color:#55acee;
-}
 
-.fa-linkedin-square:hover {
-	color:#1a85bc;
+/*mobile-specific stylings*/
+@media (max-width: 600px) {
+  /*.greeting {
+  	font-size: 3em;
+  	display: block;
+  	margin-right: auto;
+  	margin-left: auto;
+  }*/
+
+
+
 }
