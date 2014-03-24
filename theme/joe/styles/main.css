@@ -18,8 +18,8 @@ body {
 }
 
 .greeting {
-	font-size: 6em;
-	font-family: "Allura";
+	font-size: 5.25em;
+	font-family: "Source Sans Pro";
 	width: 500px;
 	padding-left: 75px;
 	margin-left: auto;
@@ -99,7 +99,7 @@ a:hover {
 
 .name {
 	color:white;
-	font-size: 3.5em;
+	font-size: 4.5em;
 	font-family: "Source Sans Pro";
 	margin: 40px;
 	margin-bottom: 0px;
