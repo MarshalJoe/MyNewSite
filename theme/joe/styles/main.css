@@ -18,9 +18,10 @@ body {
 }
 
 .greeting {
-	font-size: 5em;
+	font-size: 6em;
 	font-family: "Allura";
-	width: 400px;
+	width: 500px;
+	padding-left: 75px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
@@ -29,6 +30,10 @@ body {
 
 .greeting p {
 	margin: 0px;
+}
+
+.main p {
+	margin-top: 0px;
 }
 
 .header {
@@ -49,12 +54,6 @@ body {
 	text-align: center;
 	margin:0px;
 	font-size: 2.5em;
-}
-
-.logo-links {
-	display: inline-block;
-	float:right;
-	margin-right: 50px;
 }
 
 
