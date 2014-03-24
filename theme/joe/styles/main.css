@@ -88,6 +88,8 @@ a:hover {
 	width: 100%;
 }
 
+/*footer stuff*/
+
 .footer {
 	border-top: 25px solid #8fe7f7;
 	width: 100%;
@@ -97,15 +99,23 @@ a:hover {
 
 .name {
 	color:white;
-	font-size: 4em;
+	font-size: 3.5em;
 	font-family: "Source Sans Pro";
-	margin: 35px;
+	margin: 40px;
+	margin-bottom: 0px;
+}
+
+.link {
+	color:white;
+	font-family: "Source Sans Pro";
+	list-style-type: none;
+	margin-left: 15%; 
 }
 
 
 /*logo stylings*/
 .logo-container {
-	margin-top: 20px;
+	margin-top: 35px;
 	text-align: center;
 }
 
