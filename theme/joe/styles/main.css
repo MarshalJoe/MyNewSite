@@ -95,6 +95,15 @@ a:hover {
 	height: 250px;
 }
 
+.name {
+	color:white;
+	font-size: 4em;
+	font-family: "Source Sans Pro";
+	margin: 25px;
+}
+
+
+/*logo stylings*/
 .logo-container {
 	margin-top: 20px;
 	text-align: center;
