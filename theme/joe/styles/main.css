@@ -117,12 +117,13 @@ a:hover {
 
 /*mobile-specific stylings*/
 @media (max-width: 600px) {
-  /*.greeting {
-  	font-size: 3em;
-  	display: block;
-  	margin-right: auto;
-  	margin-left: auto;
-  }*/
+  .text {
+  	font-size: .8em;
+  }
+
+  .greeting {
+  	padding: 0px;
+  }
 
 
 
