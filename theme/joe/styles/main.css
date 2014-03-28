@@ -116,15 +116,25 @@ a:hover {
 	width:100%;
 	background-color: black;
 	color:white;
-	height:625px;
+	height:1000px;
 }
 
 .work {
-	padding: 100px;
+	padding: 50px;
+	padding-left: 100px;
+}
+
+.work h1 {
+	margin-top: 50px;
+}
+
+.work p, ul {
+	font-family: "Lusitana";
 }
 
 .work h2 {
 	margin-top: 30px;
+	color:#FF1A39;
 }
 
 /*footer stuff*/
