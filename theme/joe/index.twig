@@ -6,9 +6,9 @@
 
 <div class="splash">
 	<div class="greeting">
-		<p>I'm a freelancing</p>
-		<p>web professional</p>
-		<p>(writer/coder/maker)</p>
+		<p>I am a freelancing</p>
+		<p>web professional*</p>
+		<p>*writer/coder/maker</p>
 		<p></p>
 	</div>
 </div>
@@ -28,7 +28,21 @@
 		<p>{{ about.body }}</p>
 	</div>
 
+<div class="about-pic" style="background: url({{ about.image|image }}); background-size: cover" data-stellar-background-ratio="0.25"></div>
+
 </div>
+{% endblock %}
+
+
+{% block skills %}
+	<div class="text">
+		<h1>My Skills</h1>
+		<div class="skills">
+			<div class="large-4 columns"><h1><i class="fa fa-users fa-2x"></i></h1></div>
+			<div class="large-4 columns"><h1><i class="fa fa-terminal fa-2x"></i></h1></div>
+			<div class="large-4 columns"><h1><i class="fa fa-wrench fa-2x"></i></h1></div>
+		</div>
+	</div>
 {% endblock %}
 
 {% block code %}
