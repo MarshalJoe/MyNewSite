@@ -87,6 +87,14 @@ a:hover {
 	color: #FF1A39;
 }
 
+.quote {
+	padding-top: 75px;
+	font-size: 3em;
+	color:white;
+	font-family: "Oxygen";
+	text-align: center;
+}
+
 .skills {
 	height: 500px;
 	text-align: center;
@@ -116,7 +124,7 @@ a:hover {
 	width:100%;
 	background-color: black;
 	color:white;
-	height:1000px;
+	height:1200px;
 }
 
 .work {
