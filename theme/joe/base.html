@@ -22,10 +22,10 @@
 		<div class="header">
 			<div class="name">Joe Marshall</div>
 			<ul class="header-links">
-				<li class='links'>ABOUT</li>
-				<li class="links">CODE</li>
-				<li class="links">WRITING</li>
-				<li class="links">CONTACT</li>
+				<li class='links'><a href="#aboutAnchor">ABOUT</a></li>
+				<li class="links"><a href="#codeAnchor">CODE</a></li>
+				<li class="links"><a href="#writingAnchor">WRITING</a></li>
+				<li class="links"><a href="#contactAnchor">CONT(R)ACT</a></li>
 			</ul>
 		</div>
 
@@ -61,14 +61,16 @@
 		
 
 
-			//calculates scroll distance on event, fills in right icon, title
+			//calculates scroll distance on event, tweaks header style
 				$(window).scroll(function (e) {
 					var y = $(this).scrollTop();
 
 					if (y > 550) {
 						$(".header").css({"background-color": "white", "color": "black"});
+						$("a").css({"color":"black"});
 					} else {
 						$(".header").css({"background-color": "#FF1A39", "color": "white"});
+						$("a").css({"color":"white"});
 					}
 
 					if (y > 50) {
@@ -87,7 +89,13 @@
 				 	// $(".splash").css({"width": windowWidth, "height": height})
 				 });
 
-                
+        //set up anchor tag animate scrolls
+        $('a').click(function(){
+    			$('html, body').animate({
+        		scrollTop: $( $(this).attr('href') ).offset().top
+    			}, 500);
+    			return false;
+				}); 
 
 
 

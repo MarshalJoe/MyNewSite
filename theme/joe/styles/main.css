@@ -3,19 +3,18 @@ body, div, h1, h2, h3, h4, h5, h6 {
 	margin: 0px;
 }
 
-.splash {
-	background-color: #FF1A39;
-	position: relative;
-	height: 625px;
+a {
+	color:white;
+	text-decoration: none;
+	transition: font-size 1s;
 }
 
-.greeting {
-	padding-top: 100px;
-	font-size: 5em;
-	text-align: center;
-	line-height: .25em;
-	color:white;
+a:hover {
+	font-size: 1em;
 }
+
+/*header stuff*/
+
 
 .header {
 	width: 100%;
@@ -48,19 +47,40 @@ body, div, h1, h2, h3, h4, h5, h6 {
 	margin-right: 8%;
 }
 
+/*main body*/
+
+.splash {
+	background-color: #FF1A39;
+	position: relative;
+	height: 625px;
+}
+
+.greeting {
+	padding-top: 100px;
+	font-size: 5em;
+	text-align: center;
+	line-height: .25em;
+	color:white;
+}
+
 .story {
-	height: 300px;
+	height: 350px;
 	background-color: white;
 }
 
-a {
-	color:#8fe7f7;
-	text-decoration: none;
+.text {
+	width:80%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 50px;
+	font-size: 1.25em;
 }
 
-a:hover {
-	color:#def7fc;
+.text h1 {
+	margin-top: 40px;
 }
+
+
 
 /*footer stuff*/
 
@@ -69,27 +89,6 @@ a:hover {
 	width: 100%;
 	background-color:black;
 	height: 250px;
-}
-
-
-/*logo stylings*/
-.logo-container {
-	margin-top: 35px;
-	text-align: center;
-}
-
-.logos {
-	color:white;
-	position: relative;
-	transition:top .75s;
-}
-
-.logos:hover {
-
-}
-
-.fa-github:hover, .fa-twitter:hover, .fa-linkedin-square:hover {
-	color:#8fe7f7;
 }
 
 

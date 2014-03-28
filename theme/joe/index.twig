@@ -13,6 +13,7 @@
 		<p></p>
 	</div>
 </div>
+
 {% endblock %}
 
 
@@ -20,10 +21,11 @@
 {% block about %}
 <!-- tech section -->
 
-{% setcontent about = 'about/tech' %}
+{% setcontent about = 'page/about' %}
 <div class="story">
-
+	<div id="aboutAnchor"></div>
 	<div class="text">
+		<h1>My Story</h1>
 		<p>{{ about.body }}</p>
 	</div>
 
