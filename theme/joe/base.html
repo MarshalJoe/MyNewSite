@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="{{ paths.theme }}styles/main.css"/>
 	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 	<script type="text/javascript" src="{{ paths.theme }}javascript/jquery.stellar.js"></script>
-	<script type="text/javascript" src="{{ paths.theme }}javascript/waypoints.min.js"></script>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Oxygen|Allura' rel='stylesheet' type='text/css'>
 
@@ -20,25 +19,25 @@
 
 	<body>
 		
-		<div class="topper">no content</div>
 		<div class="header">
+			<div class="name">Joe Marshall</div>
 			<ul class="header-links">
-				<li class='links'>About</li>
-				<li class="links">Code</li>
-				<li class="links">Writing</li>
-				<li class="links">Contact</li>
+				<li class='links'>ABOUT</li>
+				<li class="links">CODE</li>
+				<li class="links">WRITING</li>
+				<li class="links">CONTACT</li>
 			</ul>
 		</div>
 
 
 		<div class="container">
 			
-			{% block about %}
+			{% block splash %}
 			{% endblock %}
 
 			<div class="divider"></div>
 			
-			{% block tech %}
+			{% block about %}
 			{% endblock %}
 
 			<div class="divider"></div>
@@ -49,43 +48,44 @@
 		</div>
 
 		<div class="footer">
-			<div class="name">Joe Marshall</div>
 		</div>
 
 		<script type="text/javascript">
 		$( document ).ready(function() {
 			
 			// fades in an element
-			var writeText = function (ms, element) {
-					$(element).hide();
-					$(element).delay(ms).fadeIn();
-			};
-	
-			writeText(500, ".header-title");
+			// var writeText = function (ms, element) {
+			// 		$(element).hide();
+			// 		$(element).delay(ms).fadeIn();
+			// };
 		
 
 
 			//calculates scroll distance on event, fills in right icon, title
 				$(window).scroll(function (e) {
 					var y = $(this).scrollTop();
-					var cardHeight = $(".card").height();
-					var headerHeight = $(".header").height();
-					var height = (cardHeight + headerHeight);	
 
-					// header stuff (hardcoded px values account for borders)
-					if (y > (height - 10)) {
-						$(".header").css({"background-color": "white", "color": "#FF1A39"});
+					if (y > 550) {
+						$(".header").css({"background-color": "white", "color": "black"});
 					} else {
 						$(".header").css({"background-color": "#FF1A39", "color": "white"});
 					}
 
-					if (y > (height + cardHeight + 40)) {
-					
+					if (y > 50) {
+						$(".header").css({"border-bottom": "1px solid black"});
+					} else {
+						$(".header").css({"border-bottom": ""});
 					}
 
-
-
 				});
+
+				//resizes splash image to fit full screen
+				$(window).resize(function (e) {
+				 	var windowWidth = $(window).width();
+				 	var height = $(window).height();
+
+				 	// $(".splash").css({"width": windowWidth, "height": height})
+				 });
 
                 
 
