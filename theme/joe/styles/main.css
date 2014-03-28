@@ -68,7 +68,7 @@ a:hover {
 	background-color: white;
 }
 
-.code-pic {
+.code-pic, .pencil-pic {
 	width:100%;
 	height:400px;
 }

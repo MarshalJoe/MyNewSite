@@ -35,21 +35,20 @@
 {% setcontent tech = 'page/tech' %}
 <div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
 </div>
-
-
 {% endblock %}
 
 
 {% block writing %}
 
-{% setcontent write = 'page/write' %}
-<div style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
-
-	<div class="text">
-		<p>{{ write.body }}</p>
-	</div>
-
+{% setcontent write = 'page/writing' %}
+<div class="text">
+	<h1>My Writing</h1>
+	<p>{{ write.body }}</p>
 </div>
+
+<div class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25"></div>
+
+
 {% endblock %}
 
 
