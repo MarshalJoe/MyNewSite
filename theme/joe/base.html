@@ -26,6 +26,7 @@
 				<li class='links'><a href="#aboutAnchor">ABOUT</a></li>
 				<li class="links"><a href="#codeAnchor">CODE</a></li>
 				<li class="links"><a href="#writingAnchor">WRITING</a></li>
+				<li class="links"><a href="#experienceAnchor">EXPERIENCE</a></li>
 				<li class="links"><a href="#contactAnchor">CONT(R)ACT</a></li>
 			</ul>
 		</div>
@@ -49,9 +50,13 @@
 
 			<div class="divider"></div>
 
+			{% block experience %}
+			{% endblock %}
+
 			{% block writing %}
 			{% endblock %}
-		
+			
+
 		</div>
 
 		<div class="footer">
@@ -85,6 +90,10 @@
 					} else {
 						$(".header").css({"border-bottom": ""});
 					}
+
+					if (y > 2220) {
+						$(".header").css({"border-bottom": "2px solid white"});
+					};
 
 				});
 
