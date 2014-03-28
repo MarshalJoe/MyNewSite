@@ -34,14 +34,16 @@
 
 
 {% block skills %}
+<div class="skill-container">
 	<div class="text">
-		<h1>My Skills</h1>
+		<h1 class="skill-title">My Skills</h1>
 		<div class="skills">
-			<div class="icons"><h1><i class="fa fa-users fa-2x"></i></h1></div>
-			<div class="icons"><h1><i class="fa fa-terminal fa-2x"></i></h1></div>
-			<div class="icons"><h1><i class="fa fa-wrench fa-2x"></i></h1></div>
+			<div class="icons"><h1><i class="fa fa-users fa-2x"></i></h1><p>Behavior-Driven Design</p></div>
+			<div class="icons"><h1><i class="fa fa-terminal fa-2x"></i></h1><p>Clean, Commented Code</p></div>
+			<div class="icons"><h1><i class="fa fa-wrench fa-2x"></i></h1><p>Good 'Ol Fashioned Grit</p></div>
 		</div>
 	</div>
+</div>
 {% endblock %}
 
 {% block code %}
@@ -55,7 +57,7 @@
 
 {% setcontent write = 'page/writing' %}
 
-<div class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
+<div id="writingAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
 	<div class="text">
 		<h1>My Writing</h1>
 		<p>{{ write.body }}</p>
