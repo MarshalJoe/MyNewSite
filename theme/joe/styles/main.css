@@ -90,12 +90,17 @@ a:hover {
 .skills {
 	height: 500px;
 	text-align: center;
-	clear:both;
 }
 
 .skills h1 {
 	margin-top: 100px;
 	color:white;
+}
+
+.icons {
+	width:30%;
+	display: inline-block;
+
 }
 
 .resume {
@@ -123,7 +128,13 @@ a:hover {
 
 	.header-links {
 		margin: 0px;
-		width: 400px;
+		width: 430px;
+		font-size: .85em;
+		text-align: center;
+	}
+
+	.links {
+		margin: 8px;
 	}
 
 	.greeting {
@@ -132,6 +143,10 @@ a:hover {
 		line-height: 1.5em;
 		margin-right: auto;
 		margin-left: auto;
+	}
+
+	.text {
+		font-size: .95em;
 	}
 
 
