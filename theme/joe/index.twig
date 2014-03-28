@@ -37,7 +37,7 @@
 <div class="skill-container">
 	<div class="text">
 		<h1 class="skill-title">My Skills</h1>
-		<div class="skills">
+		<div id="codeAnchor" class="skills">
 			<div class="icons"><h1><i class="fa fa-users fa-2x"></i></h1><p>Behavior-Driven Design</p></div>
 			<div class="icons"><h1><i class="fa fa-terminal fa-2x"></i></h1><p>Clean, Commented Code</p></div>
 			<div class="icons"><h1><i class="fa fa-wrench fa-2x"></i></h1><p>Good 'Ol Fashioned Grit</p></div>
@@ -68,8 +68,21 @@
 {% endblock %}
 
 {% block experience %}
-	<div class="resume">
-
+	<div id="experienceAnchor" class="resume">
+		<div class="work">
+			<h1>Experience</h1>
+			<br>
+			<h2>Copywriter @Spiceworks <em>Dec 2013 - current</em></h2>
+			<p>At Spiceworks I take on a variety of both front-facing and internal projects, but mostly I write "Data Gone Spicy" papers - fun top-of-the-funnel marketing pieces highlighting popular IT trends in a fun way</p>
+			<h2>Web Developer @Prepify <em>Oct 2013 - Feb 2014</em></h2>
+			<p>Prepify was founded to level the SAT-prep playing field and provide quality test preparation for everyone - regardless of income.</p>
+			<p>First began as a MakerSquare capstone project, later rebooted at the LAUNCH hackathon February 21st, 2014.</p>
+			<ul>
+				<li>Original Repo <i class="fa fa-github"></i></li>
+				<li>Reboot <i class="fa fa-github"></i></li>
+			</ul>
+			<p>Tech used: User and Admin Authentication (via Devise), Email Capability (ActionMailer), JQuery, Ajax, Foundation, Carrierwave, Amazon S3</p>
+		</div>
 	</div>
 {% endblock %}
 
