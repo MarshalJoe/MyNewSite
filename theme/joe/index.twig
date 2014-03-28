@@ -2,9 +2,8 @@
 
 
 {% block splash %}
-<!-- about section -->
+<!-- splash section -->
 
-{% setcontent about = 'page/about' %}
 <div class="splash">
 	<div class="greeting">
 		<p>I'm a freelancing</p>
@@ -19,7 +18,7 @@
 
 
 {% block about %}
-<!-- tech section -->
+<!-- about section -->
 
 {% setcontent about = 'page/about' %}
 <div class="story">
@@ -32,20 +31,25 @@
 </div>
 {% endblock %}
 
+{% block code %}
+{% setcontent tech = 'page/tech' %}
+<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
+</div>
 
+
+{% endblock %}
 
 
 {% block writing %}
-<!-- writing section -->
 
-{% setcontent write = 'page/writing' %}
-<section class="writing card" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
+{% setcontent write = 'page/write' %}
+<div style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
 
 	<div class="text">
 		<p>{{ write.body }}</p>
 	</div>
 
-</section>
+</div>
 {% endblock %}
 
 
