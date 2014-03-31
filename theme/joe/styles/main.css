@@ -22,7 +22,6 @@ a:hover {
 	background-color: #FF1A39;
 	position:fixed;
 	z-index: 100;
-	transition: "height" 1s;
 }
 
 .name {
@@ -65,6 +64,11 @@ a:hover {
 	color:white;
 }
 
+.available {
+	font-family: "Allura";
+	font-size: 1.35em;
+}
+
 .story {
 	height: 350px;
 	background-color: white;
@@ -81,20 +85,12 @@ a:hover {
 	margin-left: auto;
 	padding: 50px;
 	font-size: 1.25em;
-	font-family: "Lusitana"
+	font-family: "Oxygen"
 }
 
 .text h1 {
 	margin-top: 40px;
 	color: #FF1A39;
-}
-
-.quote {
-	padding-top: 75px;
-	font-size: 3em;
-	color:white;
-	font-family: "Oxygen";
-	text-align: center;
 }
 
 .skill-title {
