@@ -20,8 +20,7 @@
 <!-- about section -->
 
 {% setcontent about = 'page/about' %}
-<div class="story">
-	<div id="aboutAnchor"></div>
+<div class="story" id="aboutAnchor">
 	<div class="text">
 		<h1>My Story</h1>
 		<p>{{ about.body }}</p>
@@ -31,31 +30,18 @@
 
 {% block code %}
 {% setcontent tech = 'page/tech' %}
-<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.25">
+<div id="workAnchor" class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.5">
 	<div class="code-container">
-		<div class="code-title"><h1>Code</h1></div>
+		<div class="code-title"></div>
 		<div class="code-content"></div>
 	</div>
 </div>
 {% endblock %}
 
 
-{% block contact %}
-
-{% setcontent write = 'page/writing' %}
-
-<div id="writingAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
-	<div class="text">
-		<h1>Contact</h1>
-	</div>
-</div>
-
-
-{% endblock %}
-
 {% block experience %}
-	<div id="experienceAnchor" class="resume">
-		<div class="work">
+	<div class="resume">
+		<div id="experienceAnchor" class="work">
 			<h1>Experience</h1>
 			<br>
 			<h2>Copywriter @Spiceworks <em>Dec 2013 - current</em></h2>
@@ -96,6 +82,19 @@
 			</ul>
 		</div>
 	</div>
+{% endblock %}
+
+{% block contact %}
+
+{% setcontent write = 'page/writing' %}
+
+<div id="contactAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
+	<div class="text">
+		<h1>Contact</h1>
+	</div>
+</div>
+
+
 {% endblock %}
 
 
