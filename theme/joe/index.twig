@@ -6,9 +6,9 @@
 
 <div class="splash">
 	<div class="greeting">
-		<p>I am a freelance</p>
-		<p>web professional*</p>
-		<p>*writer/coder/maker</p>
+		<p>I am currently</p>
+		<p><em>available</em> for</p>
+		<p>freelance work.</p>
 	</div>
 </div>
 
@@ -37,18 +37,13 @@
 <div class="skill-container">
 	<div class="text">
 		<h1 class="skill-title">My Skills</h1>
-		<div id="codeAnchor" class="skills">
-			<div class="icons"><h1><i class="fa fa-users fa-2x"></i></h1><p>Behavior-Driven Design</p></div>
-			<div class="icons"><h1><i class="fa fa-terminal fa-2x"></i></h1><p>Clean, Commented Code</p></div>
-			<div class="icons"><h1><i class="fa fa-wrench fa-2x"></i></h1><p>Good 'Ol Fashioned Grit</p></div>
-		</div>
 	</div>
 </div>
 {% endblock %}
 
 {% block code %}
 {% setcontent tech = 'page/tech' %}
-<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
+<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.25">
 	<div class="quote"></div>
 </div>
 {% endblock %}
