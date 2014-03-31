@@ -4,11 +4,11 @@
 {% block splash %}
 <!-- splash section -->
 
-<div class="splash">
+<div class="splash" id="homeAnchor">
 	<div class="greeting">
 		<p>I am currently</p>
-		<p><span class="available">available</span></p>
-		<p>for freelancing.</p>
+		<p><span class="available">available</span> for</p>
+		<p>new projects.</p>
 	</div>
 </div>
 
@@ -29,31 +29,24 @@
 </div>
 {% endblock %}
 
-
-{% block skills %}
-<div class="skill-container">
-	<div class="text">
-		<h1 class="skill-title">My Skills</h1>
+{% block code %}
+{% setcontent tech = 'page/tech' %}
+<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.25">
+	<div class="code-container">
+		<div class="code-title"><h1>Code</h1></div>
+		<div class="code-content"></div>
 	</div>
 </div>
 {% endblock %}
 
-{% block code %}
-{% setcontent tech = 'page/tech' %}
-<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.25">
-	<div class="quote"></div>
-</div>
-{% endblock %}
 
-
-{% block writing %}
+{% block contact %}
 
 {% setcontent write = 'page/writing' %}
 
 <div id="writingAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.25">
 	<div class="text">
-		<h1>My Writing</h1>
-		<p>{{ write.body }}</p>
+		<h1>Contact</h1>
 	</div>
 </div>
 
@@ -86,7 +79,7 @@
 				<li>Wrote diaogue for IBM CloudQuest, a game designed for IBM to teach users about the cloud and collect relevant sales data.</li>
 				<li>Collaborated with Content Strategy, Creative Direction, and Client Relations teams.</li>
 			</ul>
-			<h1>Education</h1>
+			<h1 class="education">Education</h1>
 			<h2>MakerSquare</h2>
 			<ul>
 				<li>Full-time immersive bootcamp</li>
@@ -98,7 +91,7 @@
 			</ul>
 			<h2>The University of Texas</h2>
 			<ul>
-				<li>Received my B.A. in Plan II Honors (an interdisciplinary honors program between the natural sciences and liberal arts) and Rhetoric & Writing.</li>
+				<li>Received my B.A. in Plan II Honors (an interdisciplinary honors program between the natural sciences and liberal arts).</li>
 				<li>Attended the Pembroke-Kinks Program at Cambridge University, King's College.</li>
 			</ul>
 		</div>

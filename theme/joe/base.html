@@ -21,12 +21,11 @@
 	<body>
 		
 		<div class="header">
-			<div class="name">Joe Marshall</div>
+			<div class="name"><a href="#homeAnchor">Joe Marshall</a></div>
 			<ul class="header-links">
 				<li class='links'><a href="#aboutAnchor">ABOUT</a></li>
-				<li class="links"><a href="#codeAnchor">CODE</a></li>
+				<li class="links"><a href="#workAnchor">WORK</a></li>
 				<li class="links"><a href="#experienceAnchor">EXPERIENCE</a></li>
-				<li class="links"><a href="#writingAnchor">WRITING</a></li>
 				<li class="links"><a href="#contactAnchor">CONTACT</a></li>
 			</ul>
 		</div>
@@ -52,7 +51,7 @@
 			{% block experience %}
 			{% endblock %}
 
-			{% block writing %}
+			{% block contact %}
 			{% endblock %}
 			
 
@@ -90,7 +89,7 @@
 						$(".header").css({"border-bottom": ""});
 					}
 
-					if (y > 2200) {
+					if (y > (1455)) {
 						$(".header").css({"border-bottom": "2px solid white", "background-color": "black", "color": "white"});
 							$("a").css({"color":"white"});
 					};
