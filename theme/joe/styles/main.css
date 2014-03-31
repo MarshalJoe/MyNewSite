@@ -152,7 +152,16 @@ a:hover {
 	border-top: 50px solid #FF1A39;
 	width: 100%;
 	background-color:black;
-	height: 250px;
+	height: 200px;
+}
+
+.copyright {
+	color:white;
+	font-size: .6em;
+	font-family: "Oxygen";
+	position: absolute;
+	left:10%;
+	margin-top: 5px;
 }
 
 
