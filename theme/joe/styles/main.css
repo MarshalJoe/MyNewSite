@@ -168,14 +168,18 @@ a:hover {
 }
 
 .contact {
-	font-family: "Oxygen"
-}
-
-.contact h2	{
+	font-family: "Oxygen";
 	color:white;
-	line-height: 1.5em;
+	line-height: 2.5em;
+	width: 85%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 100px; 
 }
 
+.contact h1 {
+	color: #FF1A39;
+}
 /*footer stuff*/
 
 .footer {
