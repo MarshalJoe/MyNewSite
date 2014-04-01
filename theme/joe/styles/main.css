@@ -110,7 +110,7 @@ a:hover {
 }
 
 #spiceworks:hover, #prepify:hover, #sxsw:hover, #alcalde:hover, #travesty:hover {
-	background-color: rgba(255, 26, 57, .5);
+	background-color: rgba(255, 26, 57, .75);
 }
 
 .project {
@@ -130,7 +130,7 @@ a:hover {
 	width:100%;
 	background-color: black;
 	color:white;
-	height:1250px;
+	height:1300px;
 	font-family: "Oxygen";
 	padding: 50px;
 	padding-left: 100px;
