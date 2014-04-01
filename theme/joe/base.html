@@ -28,6 +28,7 @@
 				<li class="links"><a href="#experienceAnchor">EXPERIENCE</a></li>
 				<li class="links"><a href="#contactAnchor">CONTACT</a></li>
 			</ul>
+
 		</div>
 
 
@@ -43,13 +44,15 @@
 
 			<div class="divider"></div>
 
-			{% block code %}
+			{% block projects %}
 			{% endblock %}
 
 			<div class="divider"></div>
 
 			{% block experience %}
 			{% endblock %}
+
+			<div class="divider"></div>
 
 			{% block contact %}
 			{% endblock %}
@@ -69,7 +72,25 @@
 			// 		$(element).hide();
 			// 		$(element).delay(ms).fadeIn();
 			// };
-		
+			
+			//hover events for projects
+			var projectFade = function (element) {
+				$(element).hover(
+				function () {
+						$(element + " .project-info").fadeIn();
+					}, function () {
+						$(element + " .project-info").fadeOut();
+					}
+				);
+			};
+
+			projectFade("#spiceworks");
+			projectFade("#prepify");
+			projectFade("#sxsw");
+			projectFade("#alcalde");
+			projectFade("#travesty");
+
+			
 
 
 			//calculates scroll distance on event, tweaks header style
@@ -90,7 +111,7 @@
 						$(".header").css({"border-bottom": ""});
 					}
 
-					if (y > (1541)) {
+					if (y > (995)) {
 						$(".header").css({"border-bottom": "2px solid white", "background-color": "black", "color": "white"});
 							$("a").css({"color":"white"});
 					};
