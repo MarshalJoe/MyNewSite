@@ -72,19 +72,23 @@
 			// 		$(element).hide();
 			// 		$(element).delay(ms).fadeIn();
 			// };
+
+			//
 			
 			//hover events for projects
-			var projectFade = function (element) {
+			var projectFade = function (element, img_url) {
 				$(element).hover(
 				function () {
+						$(element).css({"background": "", "background-color": "#FF1A39"});
 						$(element + " .project-info").fadeIn();
 					}, function () {
 						$(element + " .project-info").fadeOut();
+						$(element).css({"background-color": "", "background": "url(" + img_url + ")"});
 					}
 				);
 			};
 
-			projectFade("#spiceworks");
+			projectFade("#spiceworks", "{{ paths.theme }}images/spiceworks.png");
 			projectFade("#prepify");
 			projectFade("#sxsw");
 			projectFade("#alcalde");
@@ -99,7 +103,7 @@
 
 					if (y > 545) {
 						$(".header").css({"background-color": "white", "color": "black"});
-						$("a").css({"color":"black"});
+						$(".header a").css({"color":"black"});
 					} else {
 						$(".header").css({"background-color": "#FF1A39", "color": "white"});
 						$("a").css({"color":"white"});
