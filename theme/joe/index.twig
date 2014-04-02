@@ -10,8 +10,8 @@
 		<p><span class="available">available</span> for</p>
 		<p>new projects.</p>
 	</div>
+	<div id="aboutAnchor"></div>
 </div>
-
 {% endblock %}
 
 
@@ -20,7 +20,7 @@
 <!-- about section -->
 
 {% setcontent about = 'page/about' %}
-<div class="story" id="aboutAnchor">
+<div class="story">
 	<div class="text">
 		<h1>My Story</h1>
 		<p>{{ about.body }}</p>
@@ -30,7 +30,7 @@
 
 {% block projects %}
 {% setcontent tech = 'page/tech' %}
-<div id="workAnchor" class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.5">
+<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.5">
 	<div class="code-container">
 		<div class="code-title"></div>
 		<div class="code-content">
@@ -63,7 +63,7 @@
 
 
 {% block experience %}
-	<div id="experienceAnchor" class="resume">
+	<div class="resume">
 		<h1>Experience</h1>
 		<br>
 		<h2>Copywriter @Spiceworks <em>Dec 2013 - current</em></h2>

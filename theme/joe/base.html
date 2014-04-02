@@ -10,7 +10,7 @@
 	<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
 	<script type="text/javascript" src="{{ paths.theme }}javascript/jquery.stellar.js"></script>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do|Oxygen' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
 
 
 	{% block head %}
@@ -37,17 +37,17 @@
 			{% block splash %}
 			{% endblock %}
 
-			<div class="divider"></div>
+			<div id="aboutAnchor" class="divider"></div>
 			
 			{% block about %}
 			{% endblock %}
 
-			<div class="divider"></div>
+			<div id="workAnchor" class="divider"></div>
 
 			{% block projects %}
 			{% endblock %}
 
-			<div class="divider"></div>
+			<div id="experienceAnchor" class="divider"></div>
 
 			{% block experience %}
 			{% endblock %}
@@ -92,7 +92,7 @@
 			projectFade("#prepify", "{{paths.theme }}images/prepify.png");
 			projectFade("#sxsw", "{{paths.theme }}images/sxsw.png");
 			projectFade("#alcalde", "{{paths.theme }}images/alcalde.png");
-			projectFade("#culturemap");
+			projectFade("#culturemap", "{{ paths.theme }}images/culturemap.png");
 
 			
 
