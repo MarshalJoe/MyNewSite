@@ -9,6 +9,10 @@ a {
 	font-family: "Raleway";
 }
 
+ul, p {
+	font-family: "Raleway";
+}
+
 a:hover {
 	font-size: 1em;
 }
@@ -136,7 +140,8 @@ a:hover {
 
 .project-info a {
 	color:white;
-	font-family: ;
+	font-family: "Courgette";
+	font-size: 1.25em;
 }
 
 .overlay {
