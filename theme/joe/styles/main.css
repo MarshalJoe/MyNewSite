@@ -168,7 +168,7 @@ a:hover {
 
 .resume .container {
 	max-width: 1000px;
-	min-width: 400px; 
+	min-width: 380px; 
 }
 
 .resume p, ul {
@@ -178,6 +178,12 @@ a:hover {
 .resume h2 {
 	margin-top: 30px;
 	color:#FF1A39;
+}
+
+.resume h3 {
+	margin-top: 30px;
+	line-height: 1.5em;
+	margin-bottom: 30px;
 }
 
 .education h1 {
@@ -251,8 +257,11 @@ a:hover {
 		margin-left: auto;
 	}
 
+	.margin-expander {
+		height: 875px;
+	}
+
 	.resume .container {
-		margin-top: 50px;
 		font-size: .75em;
 	}
 
