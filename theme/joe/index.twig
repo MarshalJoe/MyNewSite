@@ -6,9 +6,13 @@
 
 <div class="splash" id="homeAnchor">
 	<div class="greeting">
-		<p>I am currently</p>
-		<p><span class="available">available</span> for</p>
-		<p>new projects.</p>
+		<div class="text-box">
+			<p class="mobile-only hi">Hi there.</p>
+			<p>I am currently</p>
+			<p><span class="available">available</span> for</p>
+			<p>new projects.</p>
+			<p class="mobile-only signoff"><a href="">You intrigue me, sir <i class="fa fa-angle-down"></i></a></p>
+		</div>
 	</div>
 	<div id="aboutAnchor"></div>
 </div>
@@ -21,7 +25,7 @@
 
 {% setcontent about = 'page/about' %}
 <div class="story">
-	<div class="text">
+	<div class="text large-8 columns large-offset-2">
 		<h1>My Story</h1>
 		<p>{{ about.body }}</p>
 	</div>
@@ -64,7 +68,7 @@
 
 {% block experience %}
 	<div class="resume">
-		<div class="container large-12 columns">
+		<div class="container large-10 large-offset-1 columns">
 			<div class="margin-expander"></div>
 			<h1>Skills</h1>
 			<br>
@@ -118,7 +122,6 @@
 <div id="contactAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
 		<div class="contact">
 			<h1>Contact</h1>
-			<br>
 			<h2><i class="fa fa-phone"></i> 512.788.3680</h2>
 			<h2><a href="mailto:joseph.charles.marshall@gmail.com"><i class="fa fa-envelope-o"></i> joseph.charles.marshall@gmail.com</a></h2>
 			<h2><i class="fa fa-twitter"></i> @joecharmar</h2>
