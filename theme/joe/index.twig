@@ -11,7 +11,7 @@
 			<p>I am currently</p>
 			<p><span class="available">available</span> for</p>
 			<p>new projects.</p>
-			<p class="mobile-only signoff">Go on... </p>
+			<p class="mobile-only signoff">New projects, you say? <i class="fa fa-angle-down"></i></p>
 		</div>
 	</div>
 	<div id="aboutAnchor"></div>
@@ -123,9 +123,47 @@
 		<div class="contact">
 			<h1>Contact</h1>
 			<br>
-			<h2><i class="fa fa-phone"></i> 512.788.3680</h2>
-			<h2><a href="mailto:joseph.charles.marshall@gmail.com"><i class="fa fa-envelope-o"></i> joseph.charles.marshall@gmail.com</a></h2>
-			<h2><i class="fa fa-twitter"></i> @joecharmar</h2>
+			<form id="contact-form" action="/" method="post">
+				<div class="row">
+			    <div class="large-8 columns">
+			      <label>
+			        <span>Name</span>
+							<input placeholder="" type="text" tabindex="1">
+			      </label>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="large-8 columns">
+			      <label>
+			        <span>Email</span>
+							<input placeholder="" type="email" tabindex="2">
+			      </label>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="large-8 columns">
+			      <label>
+			        <span>Subject</span>
+							<input placeholder="" type="text" tabindex="3">
+			      </label>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="large-8 columns">
+			      <label>
+			      	<span>Message</span>
+			        <textarea placeholder="" tabindex="4"/></textarea>
+			      </label>
+			    </div>
+			  </div>
+			  <div class="row">
+			  	<div>
+			  		<button name="submit" type="submit" id="contact-submit">Submit</button>
+			  	</div>
+			  </div>				
+			</form>
+
+
 		</div>
 </div>
 
