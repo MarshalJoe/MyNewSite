@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		
+
 	<meta name="viewport" content="width=device-width, user-scalable=no">
 
 	<title>Joe Marshall</title>	
@@ -92,7 +92,14 @@
 				$(window).scroll(function (e) {
 					var y = $(this).scrollTop();
 
-					if (y > 545) {
+					var headerHeight = $(".header").height();
+					var splashHeight = $(".splash").height();
+					var storyHeight = $(".story").height();
+
+					var borderRed = splashHeight - headerHeight;
+					var borderBlack = borderRed + storyHeight;
+
+					if (y > borderRed) {
 						$(".header").css({"background-color": "white", "color": "black"});
 						$(".header a").css({"color":"black"});
 					} else {
@@ -106,7 +113,7 @@
 						$(".header").css({"border-bottom": ""});
 					}
 
-					if (y > (995)) {
+					if (y > borderBlack) {
 						$(".header").css({"border-bottom": "2px solid white", "background-color": "black", "color": "white"});
 							$("a").css({"color":"white"});
 					};
