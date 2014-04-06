@@ -211,27 +211,42 @@ a:hover {
 	font-size: 1.75em;
 }
 
+.contact-title {
+	color:red;
+	margin-top: 40px;
+}
+
 #contact-form {
 	font-family: "Raleway";
 }
 
-#contact-form button[type="submit"] {
-    cursor:pointer;
-    width:100%;
+#contact-form label {
+	color:white;
+	font-family: "Raleway";
+}
+
+#contact-form .error {
+	color:red;
+}
+
+#contact-form textarea {
+	height: 150px;
+}
+
+#contact-form .button {
     border:none;
-    background-color:#008CCC;
+    background-color:#B20018;
     color:white;
-    margin: 20px;
     padding: 0px;
     display: block;
-    border-radius:5px;
     height:60px;
     width: 100px;
     font-family: "Raleway";
+    transition: background-color 1s;
 }
 
-#contact-form button[type="submit"]:hover {
-	background-color: #097DB2;
+#contact-form .button:hover {
+	background-color: black;
 }
 
 /*footer stuff*/
