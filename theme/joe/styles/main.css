@@ -223,6 +223,7 @@ a:hover {
 #contact-form label {
 	color:white;
 	font-family: "Raleway";
+	font-size: 1.4em;
 }
 
 #contact-form .error {
@@ -236,6 +237,7 @@ a:hover {
 #contact-form .button {
     border:none;
     background-color:#B20018;
+    font-size: 1.25em;
     color:white;
     padding: 0px;
     display: block;
