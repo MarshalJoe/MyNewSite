@@ -169,7 +169,8 @@ a:hover {
 	padding: 50px;
 }
 
-.resume .container {
+.resume .subtitle {
+	font-size: 3em;
 }
 
 .resume p, ul {
@@ -195,7 +196,7 @@ a:hover {
 
 .contact {
 	color:white;
-	line-height: 2.5em;
+	line-height: 2em;
 	width: 85%;
 	margin-right: auto;
 	margin-left: auto;
@@ -297,7 +298,7 @@ a:hover {
 	}
 
 	.signoff {
-		color: #008CCC;
+		color: #B20018;
 	}
 
 }
