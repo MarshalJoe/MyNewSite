@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "base.php" %}
 
 
 {% block splash %}
@@ -120,50 +120,35 @@
 {% setcontent write = 'page/writing' %}
 
 <div id="contactAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
-		<div id="contact-form">
-			<div class="row">
-				<div class="large-4 columns contact-title">
-					<h1>Contact</h1>
-				</div>
-			</div>
-			<form name="contact" action="">
-				<fieldset>
-					<div class="row">
-				    <div class="large-8 columns">
-				    	<label for="name" id="name_label">Name</label>
-	    				<input type="text" name="name" id="name" size="30" value="" class="text-input" />
-	    				<label class="error" for="name" id="name_error">This field is required.</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-8 columns">
-				      <label for="email" id="email_label">Email</label>
-	   					<input type="text" name="email" id="email" size="30" value="" class="text-input" />
-	    				<label class="error" for="email" id="email_error">This field is required.</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-8 columns">
-				    	<label for="subject" id="subject_label">Subject</label>
-	    				<input type="text" name="subject" id="subject" size="30" value="" class="text-input" /> 
-				    </div>
-				  </div>
-				  <div class="row">
-				    <div class="large-8 columns">
-				      <label for="message" id="message_label">Message</label>
-							<textarea placeholder="" value=""/></textarea>
-							<label class="error" for="message" id="message_error">This field is required.</label>
-				    </div>
-				  </div>
-				  <div class="row">
-				  	<div class="large-2 columns">
-	    				<input type="submit" name="submit" class="button" id="submit_btn" value="Send" />
-				  	</div>
-				  </div>
-			  </fieldset>				
-			</form>
 
+</div>
+
+<div class="contact-section">
+	<div id="contact-form">
+		<h1>Contact</h1>
+			<div class="container">
+				
+				<form method='post' action='email.php'>
+					<h2>Name</h2>
+	    		<input name='email' type='text'>
+	    		<h2>Subject</h2>
+	    		<input name='subject' type='text'>
+	    		<h2>Message</h2>
+	    		<textarea name='message'></textarea>
+	    		<input class="button" type='submit'>
+
+  			</form>
+  			<div id="loading">
+    			Sending your message....
+  			</div>
+  			<div id="success">
+  				Success.
+  			</div>
+
+			</div>
+		
 		</div>
+
 </div>
 
 
