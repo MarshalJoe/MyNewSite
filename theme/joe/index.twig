@@ -35,7 +35,19 @@
 {% block projects %}
 {% setcontent tech = 'page/tech' %}
 <div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.5">
-	<div class="code-container">
+			<div class="skills">
+				<div class="technical large-6 columns">
+					<h2>Technical</h2>
+					<h3>Ajax, Bolt, CSS3, Foundation, Git, HTML5, Javascript, Jira, JQuery, OnTrack, Rails, Responsive Design, Ruby, Rspec, Twig, S.A.L.S.A, SASS, SCSS, Stellar.js, SVN, and more (especially libraries).</h3>
+				</div>
+				<div>
+					<h2>Journalistic</h2>
+					<h3>AP, Content, Copywriting, Criticism, Editing, Instruction, Interviews, Proofreading, Reporting, SEO.</h3>
+				</div>
+			</div>
+</div>
+
+<div class="code-container">
 		<div class="code-title"></div>
 		<div class="code-content">
 
@@ -59,10 +71,10 @@
 					<div class="project-info"><h1>Culturemap</h1><p>Ever wanted a breakdown of Austin's arcade selection? Lucky you! I have just the thing...</p><a href="http://austin.culturemap.com/news/innovation/08-26-11-19-09-games-of-all-genus-genius-arcade-edition/">Game/Read On</a></div>
 				</div>
 			</div>
-
 		</div>
 	</div>
-</div>
+
+
 {% endblock %}
 
 
@@ -70,13 +82,6 @@
 	<div class="resume">
 		<div class="container large-10 large-offset-1 columns">
 			<div class="margin-expander"></div>
-			<h1 class="subtitle">Skills</h1>
-			<br>
-			<h2>Technical</h2>
-			<h3>Ajax, Bolt, CSS3, Foundation, Git, HTML5, Javascript, Jira, JQuery, OnTrack, Rails, Responsive Design, Ruby, Rspec, Twig, S.A.L.S.A, SASS, SCSS, Stellar.js, SVN, and more (especially libraries).</h3>
-			<h2>Otherwise</h2>
-			<h3>AP, Content, Copywriting, Criticism, Editing, Instruction, Interviews, Proofreading, Reporting, SEO.</h3>
-			<br>
 			<h1 class="subtitle">Experience</h1>
 			<br>
 			<h2>Copywriter @Spiceworks <em>Dec 2013 - current</em></h2>
@@ -102,13 +107,13 @@
 				<li>Learned Ruby, RoR, HTML/CSS, JS and Jquery</li>
 				<li>Used common management tools Git, Github, Flowdock, and Basecamp</li>
 				<li>Integrated APIs into apps: including Twilio, Google Maps, and Twitter.</li>
-				<li>Introduced to Test-Driven Development (TDD) usin Rspec and agile development.</li>
+				<li>Introduced to Test-Driven Development (TDD) using Rspec and agile development.</li>
 				<li>Built <strong>BikeWeather</strong>, an app that responds to texts with weather conditions as they affect cyclists.</li>
 			</ul>
 			<h2>The University of Texas</h2>
 			<ul>
 				<li>Received my B.A. in Plan II Honors (an interdisciplinary honors program between the natural sciences and liberal arts).</li>
-				<li>Attended the Pembroke-Kinks Program at Cambridge University, King's College.</li>
+				<li>Attended the Pembroke-Kings Program at Cambridge University, Kings College.</li>
 			</ul>
 			</div>
 		<br class="clear">
@@ -127,15 +132,15 @@
 	<div id="contact-form">
 		<h1>Contact</h1>
 			<div class="container">
-				
+
 				<form method='post' action='email.php'>
 					<h2>Name</h2>
 	    		<input name='email' type='text'>
 	    		<h2>Subject</h2>
 	    		<input name='subject' type='text'>
 	    		<h2>Message</h2>
-	    		<textarea name='message'></textarea>
-	    		<input class="button" type='submit'>
+	    		<textarea name='message' placeholder="How 'bout that Game of Thrones, eh?"></textarea>
+	    		<input class="radius button" type='submit'>
 
   			</form>
   			<div id="loading">

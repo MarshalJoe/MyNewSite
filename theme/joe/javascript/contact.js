@@ -1,19 +1,30 @@
 $(function(){
-  $('#contact_form').submit(function(e){
-    e.preventDefault();
-    var form = $(this);
-    var post_url = form.attr('action');
-    var post_data = form.serialize();
-    $('#loader', form).html('Please Wait...');
-    $.ajax({
-      type: 'POST',
-      url: post_url,
-      data: post_data,
-      success: function(msg) {
-        $(form).fadeOut(500, function(){
-          form.html(msg).fadeIn();
+
+  $("#loading, #success").hide();
+
+      $('form').submit(function(e){
+        var thisForm = $(this);
+        //Prevent the default form action
+        e.preventDefault();
+        //Hide the form
+        $(this).fadeOut(function(){
+          //Display the "loading" message
+          $("#loading").fadeIn(function(){
+            //Post the form to the send script
+            $.ajax({
+              type: 'POST',
+              url: thisForm.attr("action"),
+              data: thisForm.serialize(),
+              //Wait for a successful response
+              success: function(data){
+                //Hide the "loading" message
+                $("#loading").fadeOut(function(){
+                  //Display the "success" message
+                  $("#success").text(data).fadeIn();
+                });
+              }
+            });
+          });
         });
-      }
+      })
     });
-  });
-});
