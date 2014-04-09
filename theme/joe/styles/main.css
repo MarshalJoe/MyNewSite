@@ -50,7 +50,7 @@ ul, p {
 	margin:0px;
 	line-height: 70px;
 	float:right;
-	width: 425px;
+	width: 400px;
 	margin-right: 5px;
 }
 
@@ -110,7 +110,7 @@ ul, p {
 
 .pencil-pic {
 	width:100%;
-	height: 400px;
+	height: 325px;
 }
 
 .text {
@@ -137,10 +137,6 @@ ul, p {
 	max-width: 250px;
 	color:white;
 }
-
-.technical .i, .writing .i, .other .i {
-	font-size: 3em;
-} 
 
 .code-container {
 	background-color: black;
@@ -209,8 +205,6 @@ ul, p {
 	font-family: "Raleway";
 }
 
-.pencil-pic {
-}
 
 .contact-section {
 	width: 100%;
@@ -266,7 +260,7 @@ ul, p {
 
 #loading {
 	color:white;
-	font-size: 1.75pxem;
+	font-size: 1.75em;
 	font-family: "Raleway";
 	padding-bottom: 50px;
 }
