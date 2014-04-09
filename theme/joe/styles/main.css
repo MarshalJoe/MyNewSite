@@ -90,7 +90,6 @@ ul, p {
 }
 
 .story {
-	margin-top: 30px;
 	height: 350px;
 	background-color: white;
 	line-height: 1.5em;
@@ -115,14 +114,14 @@ ul, p {
 }
 
 .text {
-	margin-top: 50px;
+	margin-top: 90px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
 .text h1 {
 	color: #FF1A39;
-	font-size: 2em;
+	font-size: 3em;
 }
 
 .skills {
@@ -210,6 +209,9 @@ ul, p {
 	font-family: "Raleway";
 }
 
+.pencil-pic {
+}
+
 .contact-section {
 	width: 100%;
 	background-color:black;
@@ -264,7 +266,7 @@ ul, p {
 
 #loading {
 	color:white;
-	font-size: 2em;
+	font-size: 1.75pxem;
 	font-family: "Raleway";
 	padding-bottom: 50px;
 }
@@ -272,10 +274,10 @@ ul, p {
 /*footer stuff*/
 
 .footer {
-	border-top: 25px solid #FF1A39;
+	border-top: 15px solid #FF1A39;
 	width: 100%;
 	background-color:black;
-	height: 90px;
+	height: 70px;
 	position: relative;
 	color:white;
 }
@@ -313,6 +315,10 @@ ul, p {
 		margin: 8px;
 	}
 
+	.text {
+		margin-top: 65px;
+	}
+
 	.greeting {
 		font-size: 2.75em;
 		width:300px;
@@ -328,6 +334,11 @@ ul, p {
 
 	.greeting a {
 		font-size: .5em;
+	}
+
+	.story {
+		margin-right: 25px;
+		margin-left: 25px;
 	}
 
 	.story p {
@@ -366,6 +377,8 @@ ul, p {
 	}
 
 	.pencil-pic {
+		height:0px;
+		border-top: 15px solid #FF1A39;
 
 	}
 

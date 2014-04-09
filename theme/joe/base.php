@@ -29,7 +29,7 @@
 		<div class="header">
 			<div class="name"><a href="#homeAnchor">Joe Marshall</a></div>
 			<ul class="header-links">
-				<li class="links"><a href="#projectsAnchor">PROJECTS</a></li>
+				<li class="links"><a href="#projectAnchor">PROJECTS</a></li>
 				<li class="links"><a href="#experienceAnchor">EXPERIENCE</a></li>
 				<li class="links"><a href="#contactAnchor">CONTACT</a></li>
 			</ul>
@@ -58,7 +58,7 @@
 		<div class="footer">
 			<div class="footer-text">
 				<h4>Copyright &copy; 2014 Joe Marshall</h4>
-				<h4>Built with <a href="bolt.cm">Bolt</a></h4>
+				<h4>Built with <a href="http://www.bolt.cm">Bolt</a></h4>
 			</div>
 		</div>
 

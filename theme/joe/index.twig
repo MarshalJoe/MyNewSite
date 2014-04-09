@@ -36,8 +36,8 @@
 {% block projects %}
 {% setcontent tech = 'page/tech' %}
 
-<div class="code-container">
-		<div id="workAnchor" class="divider"></div>
+<div class="code-container" id="projectAnchor">
+		<div class="divider"></div>
 		<div class="code-content">
 
 			<div class="row">
@@ -58,6 +58,7 @@
 				</div>
 				<div id="culturemap" style="background: url({{ paths.theme }}images/culturemap.png)" class="project large-4 columns">
 					<div class="project-info"><h1>Culturemap</h1><p>Ever wanted a breakdown of Austin's arcade selection? Lucky you! I have just the thing...</p><a href="http://austin.culturemap.com/news/innovation/08-26-11-19-09-games-of-all-genus-genius-arcade-edition/">Game/Read On</a></div>
+
 				</div>
 			</div>
 		</div>
@@ -68,10 +69,12 @@
 
 
 {% block experience %}
-	<div class="resume">
+	<div class="resume" id="experienceAnchor">
 
 		<div class="container large-10 large-offset-1 columns">
 			<div class="margin-expander"></div>
+			<br>
+			<br>
 			<h1 class="subtitle">Skills</h1>
 			<br>
 			<br>
@@ -83,10 +86,9 @@
 			<br>
 			<br>
 			<h2>Copywriter @Spiceworks <em>Dec 2013 - current</em></h2>
-			<p>As a content writer at Spiceworks, </p>
+			<p>As a content writer at Spiceworks, I interview subject matter experts and write copy for a variety of (internal and external) projects. A good portion of my work includes "Data Gone Spicy" reports: industry papers showcasing Spiceworks-generated research in an accessible way.</p>
 			<h2>Web Developer @Prepify <em>Oct 2013 - current</em></h2>
-			<p>Prepify was founded to level the SAT-prep playing field and provide quality test preparation for everyone - regardless of income.</p>
-			<p>Tech used: User and Admin Authentication (via Devise), Email Capability (ActionMailer), JQuery, Ajax, Foundation, Carrierwave, Amazon S3</p>
+			<p>Prepify was founded to level the SAT-prep playing field and provide quality test preparation for everyone - regardless of income. I was first a part of Prepify at Makersquare, during my capstone project, and continued my association after the program's conclusion.</p>
 			<h2>Data Transcription Technician @Texas Legislative Council <em>Dec 2012 - June 2013</em></h2>
 			<ul>
 				<li>Proofed, tracked, and organized legislative documents for an organization that serves all 181 Texas legislators and numerous state agencies.</li>
@@ -95,9 +97,12 @@
 			<h2>Web Content Intern @Somnio <em>May 2012 - August 2012</em></h2>
 			<ul>
 				<li>Researched and replicated brand voices of HP, IBM, and other Somnio clients</li>
-				<li>Wrote diaogue for IBM CloudQuest, a game designed for IBM to teach users about the cloud and collect relevant sales data.</li>
-				<li>Collaborated with Content Strategy, Creative Direction, and Client Relations teams.</li>
+				<li>Wrote voiceover scripts, sales collateral, and executive presentation notes</li>
+				<li>Wrote diaogue for IBM CloudQuest, a game designed for IBM to teach users about the cloud and collect relevant sales data</li>
+				<li>Took part in client kickoffs, brainstorming sessions, and strategy meetings</li>
+				<li>Collaborated with Content Strategy, Creative Direction, and Client Relations teams</li>
 			</ul>
+			<br>
 			<h1 class="subtitle">Education</h1>
 			<br>
 			<br>
@@ -106,14 +111,14 @@
 				<li>Full-time immersive bootcamp</li>
 				<li>Learned Ruby, RoR, HTML/CSS, JS and Jquery</li>
 				<li>Used common management tools Git, Github, Flowdock, and Basecamp</li>
-				<li>Integrated APIs into apps: including Twilio, Google Maps, and Twitter.</li>
-				<li>Introduced to Test-Driven Development (TDD) using Rspec and agile development.</li>
-				<li>Built <strong>BikeWeather</strong>, an app that responds to texts with weather conditions as they affect cyclists.</li>
+				<li>Integrated APIs into apps: including Twilio, Google Maps, and Twitter</li>
+				<li>Introduced to Test-Driven Development (TDD) using Rspec and agile development</li>
+				<li>Built <strong>BikeWeather</strong>, an app that responds to texts with weather conditions as they affect cyclists</li>
 			</ul>
 			<h2>The University of Texas</h2>
 			<ul>
-				<li>Received my B.A. in Plan II Honors (an interdisciplinary honors program between the natural sciences and liberal arts).</li>
-				<li>Attended the Pembroke-Kings Program at Cambridge University, Kings College.</li>
+				<li>Received my B.A. in Plan II Honors (an interdisciplinary honors program between the natural sciences and liberal arts)</li>
+				<li>Attended the Pembroke-Kings Program at Cambridge University, Kings College</li>
 			</ul>
 			</div>
 		<br class="clear">
@@ -125,7 +130,6 @@
 {% setcontent write = 'page/writing' %}
 
 <div class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
-
 </div>
 
 <div id="contactAnchor" class="contact-section">
