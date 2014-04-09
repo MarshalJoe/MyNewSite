@@ -14,7 +14,6 @@
 			<p class="mobile-only signoff">New projects, you say? <i class="fa fa-angle-down"></i></p>
 		</div>
 	</div>
-	<div id="aboutAnchor"></div>
 </div>
 {% endblock %}
 
@@ -25,30 +24,20 @@
 
 {% setcontent about = 'page/about' %}
 <div class="story">
-	<div class="text large-8 columns large-offset-2">
-		<h1>My Story</h1>
-		<p>{{ about.body }}</p>
+	<div class="large-8 columns large-offset-2">
+		<div class="text">
+			<h1>Hi</h1>
+			<p>{{ about.body }}</p>
+		</div>
 	</div>
 </div>
 {% endblock %}
 
 {% block projects %}
 {% setcontent tech = 'page/tech' %}
-<div class="code-pic" style="background: url({{ tech.image|image }}); background-size: cover; clear: left" data-stellar-background-ratio="0.5">
-			<div class="skills">
-				<div class="technical large-6 columns">
-					<h2>Technical</h2>
-					<h3>Ajax, Bolt, CSS3, Foundation, Git, HTML5, Javascript, Jira, JQuery, OnTrack, Rails, Responsive Design, Ruby, Rspec, Twig, S.A.L.S.A, SASS, SCSS, Stellar.js, SVN, and more (especially libraries).</h3>
-				</div>
-				<div>
-					<h2>Journalistic</h2>
-					<h3>AP, Content, Copywriting, Criticism, Editing, Instruction, Interviews, Proofreading, Reporting, SEO.</h3>
-				</div>
-			</div>
-</div>
 
 <div class="code-container">
-		<div class="code-title"></div>
+		<div id="workAnchor" class="divider"></div>
 		<div class="code-content">
 
 			<div class="row">
@@ -80,12 +69,21 @@
 
 {% block experience %}
 	<div class="resume">
+
 		<div class="container large-10 large-offset-1 columns">
 			<div class="margin-expander"></div>
+			<h1 class="subtitle">Skills</h1>
+			<br>
+			<br>
+			<h2>Technical</h2>
+			<h3>HTML5, CSS3, JS, RoR, Git, Foundation, SCSS, jQuery, Bolt, LESS, Jira, OnTrack, Ajax, Bootstrap, SVN, Wordpress, Rspec, Minitest, S.A.L.S.A., Twig, Python</h3>
+			<h2>Otherwise</h2>
+			<h3>AP, Content, Copywriting, Interviews, Editing, Proofing, Reporting, Instruction, SEO, Criticism, Scripts</h3>
 			<h1 class="subtitle">Experience</h1>
 			<br>
+			<br>
 			<h2>Copywriter @Spiceworks <em>Dec 2013 - current</em></h2>
-			<p>At Spiceworks I take on a variety of both front-facing and internal projects, but mostly I write "Data Gone Spicy" papers - fun marketing pieces highlighting popular IT trends in an approachable way</p>
+			<p>As a content writer at Spiceworks, </p>
 			<h2>Web Developer @Prepify <em>Oct 2013 - current</em></h2>
 			<p>Prepify was founded to level the SAT-prep playing field and provide quality test preparation for everyone - regardless of income.</p>
 			<p>Tech used: User and Admin Authentication (via Devise), Email Capability (ActionMailer), JQuery, Ajax, Foundation, Carrierwave, Amazon S3</p>
@@ -96,11 +94,13 @@
 			</ul>
 			<h2>Web Content Intern @Somnio <em>May 2012 - August 2012</em></h2>
 			<ul>
-				<li>Researched and replicated brand voices of HP, IBM, and other Somnio Clients</li>
+				<li>Researched and replicated brand voices of HP, IBM, and other Somnio clients</li>
 				<li>Wrote diaogue for IBM CloudQuest, a game designed for IBM to teach users about the cloud and collect relevant sales data.</li>
 				<li>Collaborated with Content Strategy, Creative Direction, and Client Relations teams.</li>
 			</ul>
 			<h1 class="subtitle">Education</h1>
+			<br>
+			<br>
 			<h2>MakerSquare</h2>
 			<ul>
 				<li>Full-time immersive bootcamp</li>
@@ -124,30 +124,28 @@
 
 {% setcontent write = 'page/writing' %}
 
-<div id="contactAnchor" class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
+<div class="pencil-pic" style="background: url({{ write.image|image }}); background-size: cover" data-stellar-background-ratio="0.5">
 
 </div>
 
-<div class="contact-section">
+<div id="contactAnchor" class="contact-section">
 	<div id="contact-form">
-		<h1>Contact</h1>
 			<div class="container">
-
-				<form method='post' action='email.php'>
-					<h2>Name</h2>
-	    		<input name='email' type='text'>
-	    		<h2>Subject</h2>
-	    		<input name='subject' type='text'>
-	    		<h2>Message</h2>
-	    		<textarea name='message' placeholder="How 'bout that Game of Thrones, eh?"></textarea>
-	    		<input class="radius button" type='submit'>
-
+				<br>
+				<form method='post' action=''>
+					<label for="email">Email*</label>
+	    		<input id="email" name='email' type='text' required>
+	    		<label for="subject">Subject</label>
+	    		<input id="subject" name='subject' type='text'>
+	    		<label for="message">Message*</label>
+	    		<textarea id="message" name='message' placeholder="How 'bout that Game of Thrones, eh?" required></textarea>
+       		<input class="radius button" type='submit' value="Send">
   			</form>
   			<div id="loading">
-    			Sending your message....
+    			Sending your message...
   			</div>
   			<div id="success">
-  				Success.
+  				Message sent.
   			</div>
 
 			</div>

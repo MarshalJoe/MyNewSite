@@ -21,10 +21,6 @@ ul, p {
 	font-family: "Raleway";
 }
 
-a:hover {
-	color:#B20018;
-}
-
 .mobile-only {
 	display: none;
 
@@ -54,7 +50,7 @@ a:hover {
 	margin:0px;
 	line-height: 70px;
 	float:right;
-	width: 450px;
+	width: 425px;
 	margin-right: 5px;
 }
 
@@ -94,9 +90,14 @@ a:hover {
 }
 
 .story {
-	height: 75%;
+	margin-top: 30px;
+	height: 350px;
 	background-color: white;
 	line-height: 1.5em;
+}
+
+.story a {
+	color: #FF1A39;
 }
 
 .story p {
@@ -105,6 +106,7 @@ a:hover {
 
 .code-pic {
 	width:100%;
+	height:500px;
 }
 
 .pencil-pic {
@@ -113,24 +115,36 @@ a:hover {
 }
 
 .text {
+	margin-top: 50px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 50px;
-	font-size: 1.25em;
 }
 
 .text h1 {
-	margin-top: 30px;
 	color: #FF1A39;
-}
-
-.code-container {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	font-size: 2em;
 }
 
 .skills {
 	width: 100%;
+}
+
+.skills .technical, .skills .writing, .skills .other  {
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	min-height:300px;
+	max-width: 250px;
+	color:white;
+}
+
+.technical .i, .writing .i, .other .i {
+	font-size: 3em;
+} 
+
+.code-container {
+	background-color: black;
 }
 
 .project {
@@ -169,9 +183,10 @@ a:hover {
 	width:100%;
 	background-color: black;
 	color:white;
-	min-height:1300px;
-	max-height: 5000px;
+	min-height:1000px;
+	max-height: 4000px;
 	padding: 50px;
+	border-top: 2px solid #FF1A39;
 }
 
 .resume .subtitle {
@@ -179,12 +194,11 @@ a:hover {
 }
 
 .resume p, ul {
-	line-height: 1.5em;
+	line-height: 1.3em;
 	font-size: 1.1em;
 }
 
 .resume h2 {
-	margin-top: 30px;
 	color:#FF1A39;
 	font-family: "Raleway";
 }
@@ -194,10 +208,6 @@ a:hover {
 	line-height: 1.5em;
 	margin-bottom: 30px;
 	font-family: "Raleway";
-}
-
-.education h1 {
-	margin-top: 40px;
 }
 
 .contact-section {
@@ -220,7 +230,7 @@ a:hover {
 #contact-form h2 {
 	color:white;
 	margin-top: 25px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 
 #contact-form label {
@@ -265,17 +275,16 @@ a:hover {
 	border-top: 25px solid #FF1A39;
 	width: 100%;
 	background-color:black;
-	height: 100px;
+	height: 90px;
 	position: relative;
+	color:white;
 }
 
-.copyright {
-	color:white;
-	font-size: .5em;
-	max-width: 400px;
-	position: absolute;
-	bottom: 40px;
-	left: 30px;
+.footer-text {
+	line-height: 1.25em;
+	position:absolute;
+	left:15px;
+	bottom:5px;
 }
 
 
@@ -323,6 +332,7 @@ a:hover {
 
 	.story p {
 		margin-top: 10px;
+		line-height: 1.25em;
 	}
 
 	.resume {
@@ -332,17 +342,8 @@ a:hover {
 		font-size: .8em;
 	}
 
-	.text {
-		font-size: ;
-		line-height: 1.35em;
-	}
-
 	.contact h2 {
 		font-size: 1em;
-	}
-
-	.pencil-pic {
-
 	}
 
 	.signoff {
@@ -362,6 +363,10 @@ a:hover {
 	form {
 		margin-left: 25px;
 		margin-right: 25px;
+	}
+
+	.pencil-pic {
+
 	}
 
 

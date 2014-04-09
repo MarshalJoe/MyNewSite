@@ -13,7 +13,7 @@ $(function(){
             //Post the form to the send script
             $.ajax({
               type: 'POST',
-              url: thisForm.attr("action"),
+              url: "email.php",
               data: thisForm.serialize(),
               //Wait for a successful response
               success: function(data){

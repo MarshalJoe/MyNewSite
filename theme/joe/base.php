@@ -29,8 +29,7 @@
 		<div class="header">
 			<div class="name"><a href="#homeAnchor">Joe Marshall</a></div>
 			<ul class="header-links">
-				<li class='links'><a href="#aboutAnchor">ABOUT</a></li>
-				<li class="links"><a href="#workAnchor">WORK</a></li>
+				<li class="links"><a href="#projectsAnchor">PROJECTS</a></li>
 				<li class="links"><a href="#experienceAnchor">EXPERIENCE</a></li>
 				<li class="links"><a href="#contactAnchor">CONTACT</a></li>
 			</ul>
@@ -44,12 +43,8 @@
 			{% block about %}
 			{% endblock %}
 
-			<div id="workAnchor" class="divider"></div>
-
 			{% block projects %}
 			{% endblock %}
-
-			<div id="experienceAnchor" class="divider"></div>
 
 			{% block experience %}
 			{% endblock %}
@@ -61,7 +56,10 @@
 		</div>
 
 		<div class="footer">
-			<div class="copyright"><h1>Copyright &copy; 2014 Joe Marshall - joecmarshall.com</h1></div>
+			<div class="footer-text">
+				<h4>Copyright &copy; 2014 Joe Marshall</h4>
+				<h4>Built with <a href="bolt.cm">Bolt</a></h4>
+			</div>
 		</div>
 
 		<script type="text/javascript">
@@ -103,6 +101,7 @@
 					if (y > borderRed) {
 						$(".header").css({"background-color": "white", "color": "black"});
 						$(".header a").css({"color":"black"});
+
 					} else {
 						$(".header").css({"background-color": "#FF1A39", "color": "white"});
 						$(".header a").css({"color":"white"});
@@ -116,7 +115,8 @@
 
 					if (y > borderBlack) {
 						$(".header").css({"border-bottom": "2px solid white", "background-color": "black", "color": "white"});
-							$(".header a").css({"color":"white"});
+						$(".header a").css({"color":"white"});
+
 					};
 
 				});
